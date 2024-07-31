@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import NavBar from "@/components/Layout/NavBar";
+import Footer from "@/components/Layout/Footer";
 
 export const metadata: Metadata = {
   title: "Mahesh Bahir",
@@ -10,5 +12,11 @@ export default function RootLayout({
   }: Readonly<{
     children: React.ReactNode;
   }>) {
-    return <>{children}</>;
+    return (
+      <>
+        <NavBar />
+        {children}
+        <Footer />
+      </>
+    );
   }
