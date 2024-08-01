@@ -3,7 +3,7 @@ import NavBar from "@/components/Layout/NavBar";
 import Footer from "@/components/Layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Mahesh Bahir",
+  title: "Mahesh's Portfolio",
   description: "Frontend Developer",
 };
 

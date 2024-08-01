@@ -5,14 +5,14 @@ import { FaGithub } from "react-icons/fa";
 export const socialLinks = [
   {
     icon: FaLinkedin,
-    link: "https://www.linkedin.com/in/koushik-roy-886804280/",
+    link: "https://www.linkedin.com/in/mahesh-bahir-931b8b1b0/",
   },
   {
     icon: BsTwitterX,
-    link: "https://twitter.com/KoushikRoy75724",
+    link: "https://x.com/bahir747111",
   },
   {
     icon: FaGithub,
-    link: "https://github.com/Koushik1311",
+    link: "https://github.com/MaheshB45",
   },
 ] as const;
