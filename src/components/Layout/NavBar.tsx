@@ -39,7 +39,7 @@ export default function NavBar() {
                   exit={{ opacity: 0, y: -40 }}
                 >
                   <button onClick={() => scrollToSection(link.hash)}>
-                    <link.icon className="text-[#767599] text-[1.5rem] lg:text-[2rem] hover:text-[#D6B159] transition delay-75 duration-500 ease-in-out" />
+                    <link.icon className="text-[#767599] text-[1.5rem] lg:text-[2rem] hover:text-[#F74C60] transition delay-75 duration-500 ease-in-out" />
                   </button>
                 </motion.li>
               ))}

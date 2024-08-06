@@ -64,7 +64,7 @@ export default function Project() {
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-70 flex justify-center items-center">
           <div className="relative bg-[#302F4E] p-8 rounded-md">
             {/* Links */}
-            <div className="absolute flex flex-row right-[2.1rem] top-[2.5rem] md:right-[3rem] md:top-[2.5rem] lg:top-[2.7rem]">
+            <div className="absolute flex flex-row right-[2.1rem] top-[2rem] md:right-[3rem] md:top-[2rem] lg:top-[2rem]">
               {selectedProject.projectlink && (
                 <a
                   href={selectedProject.projectlink}
@@ -107,7 +107,7 @@ export default function Project() {
               {selectedProject.title}
             </h2>
             {/* Description */}
-            <p className="text-white text-[0.9rem] lg:text-[1.4rem] font-light lg:w-[55rem]">
+            <p className="text-white pt-2 text-[0.9rem] lg:text-[1.4rem] font-light lg:w-[55rem]">
               {selectedProject.description}
             </p>
             <div>

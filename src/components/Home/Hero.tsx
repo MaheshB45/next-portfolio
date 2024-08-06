@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="mb-[2.9rem] flex gap-[1.5rem]">
           {socialLinks.map((link, index) => (
             <a href={link.link} target="_blank" key={index}>
-              <link.icon className="text-[1.2rem] lg:text-[1.7rem] text-white hover:text-yellow-500 transition delay-75 duration-200 ease-in-out" />
+              <link.icon className="text-[1.2rem] lg:text-[1.7rem] text-white hover:text-[#F74C60] transition delay-75 duration-200 ease-in-out" />
             </a>
           ))}
         </div>
