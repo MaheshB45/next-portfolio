@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import SectionHeader from "../Shared/SectionHeader";
 import { projectsData } from "@/data/Project/data";
 import { motion } from "framer-motion";
@@ -43,21 +44,22 @@ export default function Project() {
       <SectionHeader>My Projects</SectionHeader>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-[1.75rem] mx-[1rem] md:ml-[1.5rem] md:mr-[1.5rem]">
         {projectsData.map((project, index) => (
-          <button
+          <motion.div
             key={index}
-            className="relative"
+            className="relative cursor-pointer rounded-lg pb-4 bg-[#302F4E] hover:bg-[#F74C60]"
             onClick={() => openPopup(project)}
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.175, duration: 0.5 }}
+            viewport={{ once: true }}
           >
-            <motion.h5
-              className="px-[0.5rem] mt-[1rem] text-[1rem] lg:text-[1.7rem] font-semibold text-white"
-              initial={{ opacity: 0, y: 80 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.175, duration: 0.5 }}
-              viewport={{ once: true }}
+            <Image src={project.imageUrl} alt="picture" className="rounded-tr-lg rounded-tl-lg"/>
+            <h5
+              className="px-[0.5rem] py-[0.8rem] mt-[1rem] text-[1rem] lg:text-[1.7rem] font-semibold text-white"
             >
               {project.title}
-            </motion.h5>
-          </button>
+            </h5>
+          </motion.div>
         ))}
       </div>
       {showPopup && selectedProject && (

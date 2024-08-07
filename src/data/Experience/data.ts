@@ -18,12 +18,12 @@ export const experiencesData = [
     icon: CgWorkAlt,
     date: "2024",
   },
-  // {
-  //   title: "Full-Stack Developer",
-  //   location: "Houston, TX",
-  //   description:
-  //     "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-  //   icon: React.createElement(FaReact),
-  //   date: "2021 - present",
-  // },
+  {
+    title: "Web Development Intern",
+    location: "India(Remote)",
+    description:
+      "I completed an internship at OctaNet Services Pvt. Ltd. from December 2023 to January 2024, My stack includes Html, CSS, Javascript for developed responsive web pages.",
+    icon: CgWorkAlt,
+    date: "2024",
+  },
 ] as const;
