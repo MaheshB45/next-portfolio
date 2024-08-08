@@ -7,3 +7,24 @@
 .font-rubik {
   font-family: "Rubik", sans-serif;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #302F4E;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F74C60;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FFF;
+}
