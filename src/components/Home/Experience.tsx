@@ -15,7 +15,7 @@ export default function Experience() {
           transition={{ delay: 0.175, duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <div className="ml-[1.375rem] mt-[0.7rem]">
+          <div className="ml-[1.375rem] mt-[1rem]">
             <experience.icon className="text-[#F74C60] text-[1.7rem]" />
           </div>
           <div className="ml-[2.4rem]">
